@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="container">
+        this is a container...
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt veniam nulla quasi iusto numquam ad officiis similique assumenda magnam. Sit.
+    </div>
+    <button id="btn" onclick="togglehide()">CLICK HERE</button>
+    <script>
+        function togglehide()
+        {
+            let container=document.getElementById('container');
+            if(container.style.display!='none')
+            {
+                container.style.display='none';
+            }
+            else
+            {
+                container.style.display='block';
+                container.style.color='red';
+            }
+        }
+        let container=document.getElementById('container');
+        container.addEventListener('mouseover',function run()
+        {
+            alert("mouse in on div");
+        })
+        container.addEventListener("mouseout",function kuchbhi(){
+            alert("mouse not on div");
+        })
+    </script>
+</body>
+</html>
