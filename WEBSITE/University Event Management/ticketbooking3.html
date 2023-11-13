@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .main{
+            border: 2px solid black;
+            height: 100vh;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-evenly;
+            align-items: center;
+        }
+        .form{
+            border: 2px solid rgb(0, 0, 0);
+            width: 40vw;
+            height: 90vh;
+        }
+        .bookticket{
+            border: 2px solid rgb(0, 0, 0);
+            width: 40vw;
+            height: 90vh;
+        }
+        .formelement{
+            margin: 10px;
+            font-weight: bold;
+        }
+        .submit{
+            text-decoration: none;
+            border: 2px solid black;
+            border-radius: 3px;
+            color:white;
+            background-color: black;
+        }
+    </style>
+</head>
+<body>
+    <div class="main">
+       
+        <div class="bookticket">
+            <h2>For booking tickets fill this form </h2>
+            <div class="formelement">
+                Name: <input type="text" name="" class="text" required>
+            </div>
+            <div class="formelement">Section: <input type="text" name="" class="text"required></div>
+            <div class="formelement">Reg no: <input type="number" name="" id="reg" required></div>
+            <div class="formelement">Year: <select name="" id="select" required>
+                <option value="1st year">1st year</option>
+                <option value="2nd year">2nd year</option>
+                <option value="3rd year">3rd year</option>
+                <option value="4th year">4th year</option>
+                <option value="other">other</option>
+            </select></div>
+            <div class="formelement"><a class="submit" href="ticket3.html">Submit</a></div>
+        </div>
+    </div>
+</body>
+</html>
