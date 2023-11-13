@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    font-family: 'Roboto',sans-serif;
+}
+body{
+    background: url('https://cdn.pixabay.com/photo/2018/08/21/23/29/forest-3522519_1280.jpg') no-repeat top center;
+    background-size: cover;
+    height: 100vh;
+}
+.wrapper{
+    position: absolute;
+    top:50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 100%;
+    max-width: 550px;
+    background: rgba(0,0,0,0.8);
+    padding: 30px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.3);
+}
+.wrapper .title h1{
+    color: #28C76F;
+    text-align: center;
+    margin-bottom: 25px;
+}
+.contact-form{
+    display: flex;
+    flex-direction: column;
+    margin-right: 4%;
+}
+.input-fields,
+.msg{
+    width: 48%;
+}
+.input-fields .input,
+.msg textarea{
+    margin: 10px 0;
+    background: transparent;
+    border: 2px solid #28C76F;
+    padding: 10px;
+    color: whitesmoke;
+    width: 100%;
+}
+.msg textarea{
+    height: 212px;
+}
+::-webkit-input-placeholder{
+    color: #28C76F;
+}
+::-moz-placeholder{
+    color: #28C76F;
+}
+    :-ms-input-placeholder{
+    color: #28C76F
+}
+
+.btn{
+    background-image: linear-gradient( 135deg, #81fBB8 10%, #28C76F 100%);
+    text-align: center;
+    padding: 15px;
+    color: #fff;
+    cursor: pointer;
+    text-transform: uppercase;
+}
+.btn:hover{
+    background-color: #49C62B;
+}
+.wrappercontrol{
+    height: 100vh;
+    width: 100vw;
+}
+.developerdetails{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+.eachdev{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px dotted black;
+    margin: 20px;
+}
+.eachdev img{
+    border: 5px solid black;
+}
+.details{
+    display: flex;
+    flex-direction: column;
+    font-size: 1.2rem;
+    justify-content: center;
+    align-items: center;
+    margin: 0% 10%;
+}
+.backtohome{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5rem;
+}
