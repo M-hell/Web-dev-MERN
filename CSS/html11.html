@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            border: 2px solid black;
+            display: flex;
+            flex-direction: column;
+        }
+        /* types pseudo selctors */
+        input[type]{
+            margin: 30px;
+        }
+        input[type='text']{
+            text-align: center;
+            color: rebeccapurple;
+            font-size: 2rem;
+        }
+        .container2{
+            display: flex;
+            justify-content: center;
+        }
+        a[target]{
+            border: 2px solid red;
+            font-size: 20em;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>form</h1>
+        <input type="text" placeholder="enter text">
+        <input type="number" placeholder="enter pass">
+    </div>
+    <div class="container2">
+        <a href="https://google.com" target="_blank">google</a>
+    </div>
+</body>
+</html>

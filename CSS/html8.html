@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .flexbox{
+            border: 2px solid black;
+            background-color: bisque;
+            padding: 2px;
+            width: 70%;
+            height: 600px;
+        }
+        .items{
+            border: 2px solid black;
+            margin: 5px;
+            width: 100px;
+            height: 100px;
+        }
+        .flexbox{
+            display: flex;
+            /* makes a flex box */
+            flex-direction: column;
+            /* column reverse is also possible */
+            flex-direction: row;
+            /* row reverse is also possible */
+            flex-wrap: wrap;
+            /* makes it responsive  */
+            /* wrap reverse is also possible */
+            flex-flow: row wrap;
+            justify-content: center;
+            justify-content: space-between;
+            justify-content: space-evenly;
+            justify-content: space-around;
+            align-items: center;
+            align-items: flex-end;
+            align-items: flex-start;
+            align-items: stretch;
+            /* strech is awesome  makes it so much responsive */
+        }
+        #id1
+        {
+            order: 3;
+            /* sends box 1 at last */
+            flex-grow: 2;
+        }
+        #id2
+        {
+            order: 1;
+            flex-grow: 1;
+        }
+        #id3
+        {
+            flex-shrink: 3;
+        }
+        #id4{
+            flex-shrink: 5;
+        }
+        #id5{
+            flex-basis: 200px;
+            /* if flex-direction is row increases width else(column) increases height */
+            /* flex: grow_value shrink_value basis_value; */
+            align-self: center;
+            align-self: flex-end;
+            align-self: flex-start;
+        }
+    </style>
+</head>
+<body>
+    <div class="flexbox">
+        <div class="items" id="id1">
+            box1
+        </div>
+        <div class="items" id="id2">
+            box2
+        </div>
+        <div class="items" id="id3">
+            box3
+        </div>
+        <div class="items" id="id4">
+            box4
+        </div>
+        <div class="items" id="id5">
+            box5
+        </div>
+    </div>
+</body>
+</html>

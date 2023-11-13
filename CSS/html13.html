@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        h1::after{
+            display: block;
+            content: 'content after h1';
+        }
+        h1::before{
+            display: block;
+            content: 'content before h1';
+        }
+        .class{
+            border: 2px solid black;
+            margin: 20px;
+        }
+        .container
+        {
+            border: 2px solid red;
+            display: flex;
+        }
+        /* this is a hack of setting background image */
+        header::before{
+            background: url(background.jpg) no-repeat center center/cover; 
+            /* to hover any image outside this folder type " ../ " and then browse your image  */
+            content: ' ';
+            position: absolute;
+            top: 0px;
+            left: 0px;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+            opacity: 0.79;
+        }
+    </style>
+</head>
+<body>
+    <!-- header is very important for setting the background image
+    it is fone by header::before and the attributes i have used previously -->
+    <header>
+        this is header
+    </header>
+    <h1>how to set an image in body perfectly</h1>
+    <hr>
+    <div class="container">
+    <div class="class">gshffsajfsjdshj</div>
+    <div class="class">gffjsjffdsjghfdsghds</div>
+    <div class="class">kvjggshvfgsfg</div>
+    <div class="class">jhcsjgscsgj</div>
+    <div class="class">ghcdsjcsgcshgh</div>
+    <div class="class">,gdsahjcgjgdsahgcdgh</div>
+    <div class="class">jgssgsgjdsjhgsdj</div>
+    <div class="class">hjvcsjhdssdhfgdsh</div>
+    <div class="class">dhgjsgjsgjsdjgsjg</div>
+    <div class="class">hjcjgdhgjdghdgadhh</div>
+</div>
+</body>
+</html>

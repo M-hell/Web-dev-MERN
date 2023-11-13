@@ -1,0 +1,26 @@
+/* id selector */
+#id1{
+    color: blueviolet;
+    background-color: beige;
+    border: 5px solid red;
+}
+/* class selector */
+.class1{
+    color: cadetblue;
+    background-color: azure;
+    border: 10px solid greenyellow;
+}
+/* element selector */
+input{
+    color: rgb(247, 9, 9);
+    background-color: aqua;
+    border: 5px solid green;
+}
+/* group selector */
+b,strong,em{
+    border: 5px solid violet;
+}
+.class2,.class3,#newid{
+    color: hotpink;
+    background-color: bisque;
+}
