@@ -1,0 +1,248 @@
+/* basic css  */
+
+html{
+    scroll-behavior: smooth;
+}
+.header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.header::before{
+    background: url('../img/backgroundpic1.jpg') no-repeat center center/cover;
+    content: " ";
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 125%;
+    z-index: -1;
+}
+
+/* navbar css  */
+
+.navbar ul{
+    display: flex;
+    list-style: none;
+    padding: 10px;
+}
+.navbar ul li{
+    padding: 10px;
+    font-size: 1rem;
+    font-weight: bold;
+}
+.navbar ul li a{
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    font-family: 'Nunito', sans-serif;
+}
+.navbar ul li a{
+    transition-property: all;
+    transition-duration: 0.5s;
+}
+.navbar ul li a:hover{
+    text-shadow: 10px 10px 10px rgb(255, 255, 255);
+    color: rgb(168, 152, 28);
+}
+
+/* profile img css  */
+
+.profile{
+    border: none;
+    border-radius: 50%;
+    width: 7%;
+    margin: 5px;
+    padding: 3px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.profile img{
+    width: 90%;
+}
+#active{
+    color: rgb(168, 152, 28);
+}
+
+/* body css  */
+
+.heading{
+    color: white;
+    animation-name: portfolio;
+    animation-iteration-count: infinite;
+    animation-duration: 20s;
+    animation-fill-mode: forwards;
+}
+@keyframes portfolio{
+    0%{
+        color: rgb(232, 164, 164);
+    }
+    10%{
+        color: rgb(216, 235, 146);
+    }
+    20%{
+        color: rgb(154, 228, 159);
+    }
+    30%{
+        color: rgb(142, 212, 224);
+    }
+    40%{
+        color: rgb(135, 138, 229);
+    }
+    50%{
+        color: rgb(225, 147, 221);
+    }
+    60%{
+        color: rgb(228, 129, 129);
+    }
+    70%{
+        color: rgb(227, 205, 118);
+    }
+    80%{
+        color: rgb(117, 228, 188);
+    }
+    90%{
+        color: rgb(176, 96, 210);
+    }
+    100%{
+        color: rgb(53, 101, 136);
+    }
+}
+.plang{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin: 10px;
+}
+.pics{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.set{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    margin: 10px;
+}
+.com{
+    color: white;
+    margin: 10px;
+    padding: 10px;
+    border: 2px solid white;
+    border-radius: 20px;
+    transition-property: all;
+    transition-duration: 1s;
+}
+.com:hover{
+    background-color: rgb(239, 239, 166);
+    color: black;
+}
+.pics img{
+    transition-property: all;
+    transition-duration: 1s;
+    border: none;
+    border-radius: 20px;
+}
+.pics img:hover{
+    box-shadow: 10px 10px 10px white;
+}
+.more{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 10px;
+}
+.obi{
+    border: 2px solid white;
+    color: white;
+    margin: 10px;
+    padding: 10px;
+    border-radius: 20px;
+    transition-property: all;
+    transition-duration: 1s;
+}
+.obi:hover{
+    background-color: rgb(239, 239, 166);
+    color: black;
+}
+.panda{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.pro{
+    border: 2px solid white;
+    margin: 10px;
+    padding: 10px;
+    border-radius: 20px;
+    transition-property: all;
+    transition-duration: 0.5s;
+}
+.pro a{
+    text-decoration: none;
+    color: rgb(21, 232, 248);
+    transition-property: all;
+    transition-duration: 0.5s;
+}
+.pro a:hover{
+    color: white;
+}
+.pro:hover{
+    background-color: rgb(81, 81, 81);
+}
+
+
+/* backbutton css  */
+
+.backbutton{
+    transition-property: all;
+    transition-duration: 1s;
+    border: none;
+    border-radius: 10px;
+    display: flex;
+    padding: 6px;
+    margin: 4px;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 15%;
+    background-color: white;
+}
+.backbutton a{
+    text-decoration: none;
+    color: black;
+    font-family: 'Caprasimo', cursive;
+}
+.parent{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+.backbutton:hover{
+    background-color: gray;
+    border: 1px solid white;
+}
+
+/* media query */
+
+@media(min-width:100px) and (max-width:1500px)
+{
+    .header{
+        flex-direction: column;
+    }
+    .profile{
+        width: 23%;
+    }
+    .header::before{
+        height: 205%;
+        width: 105%;
+    }
+    .backbutton{
+        width: 50%;
+    }
+} 

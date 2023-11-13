@@ -1,0 +1,209 @@
+/* basic css  */
+
+html{
+    scroll-behavior: smooth;
+}
+.header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.header::before{
+    background: url('../img/backgroundpic3.jpg') no-repeat center center/cover;
+    content: " ";
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 140%;
+    z-index: -1;
+}
+
+/* navbar css  */
+
+.navbar ul{
+    display: flex;
+    list-style: none;
+    padding: 10px;
+}
+.navbar ul li{
+    padding: 10px;
+    font-size: 1rem;
+    font-weight: bold;
+}
+.navbar ul li a{
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    font-family: 'Nunito', sans-serif;
+}
+.navbar ul li a{
+    transition-property: all;
+    transition-duration: 0.5s;
+}
+.navbar ul li a:hover{
+    text-shadow: 10px 10px 10px rgb(255, 255, 255);
+    color: rgb(168, 152, 28);
+}
+
+/* profile pic css  */
+
+.profile{
+    border: none;
+    border-radius: 50%;
+    width: 7%;
+    margin: 5px;
+    padding: 3px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.profile img{
+    width: 90%;
+}
+#active{
+    color: rgb(168, 152, 28);
+}
+
+
+/* content css  */
+
+.mypic{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+.mypic img{
+    border: 2px solid white;
+    border-radius: 20px;
+    width: 70%;
+}
+.info{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+    padding: 10px;
+}
+.all{
+    border: none;
+    margin: 7px;
+    padding: 10px;
+    border-radius: 20px;
+    width: 70%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    animation-name: portfolio;
+    animation-iteration-count: infinite;
+    animation-duration: 20s;
+    animation-fill-mode: forwards;
+    font-size: 1rem;
+    font-family: cursive;
+    transition-property: all;
+    transition-duration: 1s;
+}
+.all:hover{
+    border: 2px solid white;
+    box-shadow: 5px 5px 15px white;
+}
+@keyframes portfolio{
+    0%{
+        background-color: rgb(154, 228, 159);
+    }
+    10%{
+        background-color: rgb(216, 235, 146);
+    }
+    20%{
+        background-color: rgb(154, 228, 159);
+    }
+    30%{
+        background-color: rgb(216, 235, 146);
+    }
+    40%{
+        background-color: rgb(154, 228, 159);
+    }
+    50%{
+        background-color: rgb(216, 235, 146);
+    }
+    60%{
+        background-color: rgb(154, 228, 159);
+    }
+    70%{
+        background-color: rgb(216, 235, 146);
+    }
+    80%{
+        background-color: rgb(154, 228, 159);
+    }
+    90%{
+        background-color: rgb(216, 235, 146);
+    }
+    100%{
+        background-color: rgb(154, 228, 159);
+    }
+}
+
+/* backbutton css  */
+
+.backbutton{
+    transition-property: all;
+    transition-duration: 1s;
+    border: none;
+    border-radius: 10px;
+    display: flex;
+    padding: 6px;
+    margin: 4px;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 15%;
+    background-color: white;
+}
+.backbutton a{
+    text-decoration: none;
+    color: black;
+    font-family: cursive;
+}
+.parent{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+.backbutton:hover{
+    background-color: gray;
+    border: 1px solid white;
+}
+
+
+/* media query */
+
+@media(min-width:100px) and (max-width:1500px)
+{
+    .header{
+        flex-direction: column;
+    }
+    .profile{
+        width: 23%;
+    }
+    .header::before{
+        height: 130%;
+        width: 105%;
+    }
+    .info{
+        flex-direction: row;
+    }
+    .all{
+        width: 60%;
+        font-size: 0.6rem;
+    }
+    .backbutton{
+        width: 50%;
+    }
+} 
