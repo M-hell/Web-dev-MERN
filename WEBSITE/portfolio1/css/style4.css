@@ -1,0 +1,83 @@
+body{
+    background-color: rgb(211, 211, 10);
+}
+.navbar{
+    background-color: rgb(165, 182, 14);
+    border: none;
+    border-radius: 20px;
+    width: 39%;
+    margin: auto;
+    box-sizing: border-box;
+}
+.navbar ul{
+    overflow: auto;
+}
+.navelement{
+    float: left;
+    list-style: none;
+    margin: 10px 10px;
+    padding: 5px 0px;
+}
+.navelement a{
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+    font-family: cursive;
+}
+.navelement a:hover{
+    color: rgb(48, 37, 106);
+    border: 3px solid rgb(69, 75, 72);
+    border-radius: 7px;
+    background-color: rgb(211, 211, 10);
+    cursor: grabbing;
+}
+#id5 a{
+    color: rgb(48, 37, 106);
+}
+.add1{
+    display: inline-block;
+    margin: 0px 30px;
+    padding: 10px;
+    font-weight: bold;
+    font-family: Cambria;    
+}
+.add2{
+    display: inline-block;
+    position: absolute;
+    margin: 0px 30px;
+    padding: 10px;
+    font-weight: bold;
+    font-family: Cambria;  
+}
+.div1{
+    margin: 50px auto;
+    width: 44%;
+}
+.mobile{
+    margin: auto;
+    width: 20%;
+}
+.mobile h3{
+    font-weight: bold;
+    font-family: Cambria; 
+}
+.mobile p{
+    font-weight: bold;
+    font-family: Cambria; 
+}
+.back{
+    width: 13%;
+    margin: 50px auto;
+}
+.back a{
+    text-decoration: none;font-family: cursive;
+    font-size: 15px;
+    padding: 5px 10px;
+    border: none;
+    background-color: rgb(80, 76, 76);
+    color: white;
+    border-radius: 8px;
+}
+.back a:hover{
+    background-color: black;
+}

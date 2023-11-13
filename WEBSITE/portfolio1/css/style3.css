@@ -1,0 +1,109 @@
+body{
+    background-color: rgb(211, 211, 10);
+}
+.navbar{
+    background-color: rgb(165, 182, 14);
+    border: none;
+    border-radius: 20px;
+    width: 39%;
+    margin: auto;
+    box-sizing: border-box;
+}
+.navbar ul{
+    overflow: auto;
+}
+.navelement{
+    float: left;
+    list-style: none;
+    margin: 10px 10px;
+    padding: 5px 0px;
+}
+.navelement a{
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+    font-family: cursive;
+}
+.navelement a:hover{
+    color: rgb(48, 37, 106);
+    border: 3px solid rgb(69, 75, 72);
+    border-radius: 7px;
+    background-color: rgb(211, 211, 10);
+    cursor: grabbing;
+}
+#id3 a{
+    color: rgb(48, 37, 106);
+}
+.sanda{
+    border: 2px solid white;
+    border-radius: 60px;
+    width: 95%;
+    margin: 30px auto;
+    background-color: rgb(126, 132, 17);
+}
+.skill{
+    display: inline-block;
+    width: 40%;
+    position: relative;
+    left: 23px;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 50px;
+    border: none;
+    background-color: rgb(91, 104, 8);
+    font-family: cursive;
+    font-weight: bold;
+    color: rgb(204, 214, 16);
+}
+.achieve{
+    position: absolute;
+    display: inline-block;
+    width: 40%;
+    right: 65px;
+    height: 346px;
+    padding: 10px;
+    margin: 10px;
+    border: none;
+    background-color: rgb(91, 104, 8);
+    border-radius: 50px;
+    font-family: cursive;
+    font-weight: bold;
+    color: rgb(204, 214, 16);
+}
+.skill:hover{
+    border: 2px solid black;
+}
+.achieve:hover{
+    border: 2px solid black;
+}
+.back{
+    width: 30%;
+    margin: 50px 80px;
+}
+.back a{
+    text-decoration: none;font-family: cursive;
+    font-size: 15px;
+    padding: 5px 10px;
+    border: none;
+    background-color: rgb(80, 76, 76);
+    color: white;
+    border-radius: 8px;
+}
+.back a:hover{
+    background-color: black;
+}
+.projects
+{
+    width: 70%;
+    margin: 70px;
+}
+.projects h1
+{
+    border: 2px solid black;
+    width: 18%;
+    text-align: center;
+    border-radius: 20px;
+    background-color: rgb(103, 102, 102);
+    color: rgb(56, 54, 54);
+    font-weight: bold;
+}

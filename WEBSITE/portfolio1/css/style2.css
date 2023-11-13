@@ -1,0 +1,80 @@
+body{
+    background-color: rgb(211, 211, 10);
+}
+.navbar{
+    background-color: rgb(165, 182, 14);
+    border: none;
+    border-radius: 20px;
+    width: 39%;
+    margin: auto;
+    box-sizing: border-box;
+}
+.navbar ul{
+    overflow: auto;
+}
+.navelement{
+    float: left;
+    list-style: none;
+    margin: 10px 10px;
+    padding: 5px 0px;
+}
+.navelement a{
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+    font-family: cursive;
+}
+.navelement a:hover{
+    color: rgb(48, 37, 106);
+    border: 3px solid rgb(69, 75, 72);
+    border-radius: 7px;
+    background-color: rgb(211, 211, 10);
+    cursor: grabbing;
+}
+#id2 a{
+    color: rgb(48, 37, 106);
+}
+.information pre{
+    float: left;
+    background-color: rgb(113, 135, 13);
+    font-weight: bold;
+    font-family: 'Franklin Gothic Medium';           
+    border: 5px solid rgb(8, 8, 130);
+    padding: 20px 20px;
+    margin: 10px 70px;
+    border-radius: 20px;
+    width: 50%;
+}
+.image{
+    border: 2px solid black;
+    padding: 20px;
+    border-radius: 20px;
+    width: 15%;
+    float: left;
+    margin: 50px 58px;
+}
+#image{
+    border: 2px solid black;
+    border-radius: 20px;
+    height: 300px;
+}
+.image p{
+    text-align: center;
+    font-weight: bold;
+}
+.back{
+    width: 30%;
+    margin: 50px 80px;
+}
+.back a{
+    text-decoration: none;font-family: cursive;
+    font-size: 15px;
+    padding: 5px 10px;
+    border: none;
+    background-color: rgb(80, 76, 76);
+    color: white;
+    border-radius: 8px;
+}
+.back a:hover{
+    background-color: black;
+}
