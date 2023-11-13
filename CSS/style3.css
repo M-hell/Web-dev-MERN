@@ -1,0 +1,8 @@
+.container {
+  display: block;
+}
+.mobile {
+  display: block;
+  font-size: 50px;
+  background-color: rgb(8, 0, 255);
+}
