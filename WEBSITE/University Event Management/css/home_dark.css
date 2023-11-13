@@ -1,0 +1,133 @@
+html{
+    scroll-behavior: smooth;
+}
+body{
+    margin: 0px;
+}
+
+/* navbar */
+
+.my-own-navbar{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: flex-start;
+    background-color: rgb(88, 78, 71);
+    margin: auto;
+    width: 80%;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    box-shadow: 10px 10px 5px rgb(57, 56, 56);
+    border-left: 3px solid white;
+    border-right: 3px solid white;
+    border-bottom: 3px solid white;
+}
+.my-own-navimg{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 5px;
+}
+.my-own-navimg img{
+    width: 90%;
+}
+.my-own-imgtext{
+    padding: 3px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    font-size: 2em;
+    font-family: 'Mooli';
+    font-weight: bold;
+    color: white;
+}
+.my-own-navitems ul{
+    display: flex;
+    list-style: none;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.my-own-navitems{
+    width: 50%;
+    
+}
+.my-own-navitems ul li{
+    padding: 5%;
+    font-size: 1.3rem;
+}
+.my-own-navitems li a{
+    text-decoration: none;
+    color: black;
+    font-size: 1em;
+    font-family: 'Pacifico';
+}
+.my-own-navitems ul li a{
+    transition-property: all;
+    transition-duration: 1s;
+}
+.my-own-navitems ul li a:hover{
+    text-shadow: 10px 10px 5px rgb(153, 148, 148);
+    color: rgb(181, 177, 177);
+}
+.my-own-light-dark-mode a{
+    padding: 5px;
+    text-decoration: none;
+    border: 2px solid black;
+    color: black;
+    border-radius: 80px;
+}
+.my-own-light-dark-mode a
+{
+    transition-property: all;
+    transition-duration: 0.5s;
+}
+.my-own-light-dark-mode a:hover
+{
+        background-color: rgb(255, 255, 255);
+        border: 2px solid rgb(0, 0, 0) ;
+}
+.my-own-light-dark-mode a{
+    background-color: grey;
+    font-size: 1.5rem;
+}
+
+/* background image */
+
+.my-own-navbar::before{
+    background: url('../img/background1.jpg');
+    content: " ";
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 150%;
+    z-index: -1;
+}
+
+/* content */
+
+#controlthecentralheading{
+    background-color: antiquewhite;
+    margin: 50px;
+    border: none;
+    border-radius: 30px;
+    
+}
+#controlthecentralheading h3{
+    padding: 20px;
+}
+
+
+
+.informtogoevent{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+    background-color: rgb(54, 52, 52);
+    color: white;
+}
